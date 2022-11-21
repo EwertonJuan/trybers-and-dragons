@@ -1,0 +1,17 @@
+import Fighter, { SimpleFighter } from '../Fighter';
+import Battle from './Battle';
+
+export default class PVE extends Battle {
+  private _enemies: SimpleFighter[];
+  
+  constructor(player: Fighter, enemies: SimpleFighter[]) {
+    super(player);
+    this._enemies = enemies;
+  }
+
+  fight(): number {
+    this._enemies.forEach((enemy) => { this.player.attack(enemy); });
+    this._enemies.forEach((enemy) => { enemy.attack(this.player); });
+    return super.fight();
+  }
+}
