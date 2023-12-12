@@ -25,14 +25,14 @@ Para executar este projeto em sua máquina local, você precisará ter o Node.js
    ```
 3. Instale as dependências:
 
-# Sem Docker
+  ### Sem Docker
 
    ```bash
    npm install
    ```
-# Com Docker
+  ### Com Docker
 
-> Rode o serviço `node` com o comando `docker-compose up -d`.
+  > Rode o serviço `node` com o comando `docker-compose up -d`.
   - Esse serviço irá inicializar um container chamado `trybers_and_dragons`.
   - A partir daqui você pode rodar o container `trybers_and_dragons` via CLI ou abri-lo no VS Code.
 
